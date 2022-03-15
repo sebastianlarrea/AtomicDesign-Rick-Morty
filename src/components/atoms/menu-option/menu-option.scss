@@ -1,0 +1,17 @@
+.menu-option {
+    list-style: none;
+    margin: 10px;
+
+    &__link {
+        text-decoration: none;
+        width: 100px;
+        height: 30px;
+        padding: 20px 40px;
+        font-family: 'Poppins';
+        color: white;
+
+        &:hover {
+            background-color: #e27065;
+        }
+    }
+}

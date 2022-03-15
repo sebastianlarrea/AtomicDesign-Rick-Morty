@@ -1,0 +1,16 @@
+.search-element {
+    &__input {
+        padding: 5px;
+        margin-right: 5px;
+        outline: none;
+    }
+
+    &__icon {
+        margin-right: 3px;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

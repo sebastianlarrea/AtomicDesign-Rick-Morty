@@ -1,0 +1,44 @@
+.card {
+    margin: 30px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        padding: 10px;
+        font-family: 'Arimo', sans-serif;
+        text-align: center;
+        color: white;
+        background-color: #db4c3f;
+    }
+
+    &__info {
+        margin: 5px;
+        box-shadow: 2px 2px 2px grey;
+        display: flex;
+        flex-direction: column;
+        background-color: #e27065;
+    }
+
+    &__info-item {
+        margin: 10px 50px 10px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__info-name {
+        text-align: left;
+    }
+
+    &__info-data {
+        text-align: right;
+    }
+
+    h4 {
+        width: 70px;
+        font-family: 'Poppins', sans-serif;
+    }
+}
