@@ -8,14 +8,14 @@ const Characters = () => {
     const [fullData, setFullData] = useState(null)
     const cardInfo = ['status', 'gender', 'species']
 
-    useEffect(() => {
-        const getData = async () => {
-            const fetchResult = await rickAndMortyApi('/character')
-            setData(fetchResult)
-            setFullData(fetchResult)
-        }
-        getData()
-    }, [])
+    const getData = () => {
+        rickAndMortyApi('/character').then(resp => {
+            const dataObtained = resp?.data?.results
+            setData(dataObtained)
+            setFullData(dataObtained)
+        })
+    }
+    useEffect(getData, [])
 
     localStorage.setItem(
         'full-data',
